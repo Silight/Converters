@@ -1,13 +1,10 @@
-# Finds the area of a trapazoid
-# a = (x + y) / 2 * h
-
-print("Area of a trapezoid")
-hString = input("Enter the height of the trapezoid: ")
-xString = input("Enter the length of the bottom base: ")
-yString = input("Enter the length of the top base: ")
-h = float(hString)
-x = float(xString)
-y = float(yString)
-a = (x + y) / 2 * h
-area = str(a)
-print("The area is: " + area)
+def trapeArea(x, y, h):
+    '''
+    Finds the area of a trapezoid. 
+    x = length of top base
+    y = length of bottom base
+    h = height of the trapezoid
+    returns area
+    '''
+    area = (x + y) / 2 * h
+    return area
